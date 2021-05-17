@@ -1,0 +1,29 @@
+body{
+
+background-color: cadetblue;
+
+}
+
+li:hover {
+
+    background-color: aquamarine;
+    list-style:none;
+
+}
+.lista1{
+
+    list-style:none;
+}
+.lista1:active {
+
+    color:white;
+    font-size: larger;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    
+
+}
+
+.lista2{
+
+    list-style:none;
+}
