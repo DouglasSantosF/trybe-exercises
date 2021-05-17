@@ -1,13 +1,21 @@
+p, h1{
+
+    text-align: center;
+
+}
+
+
 body{
 
 background-color: cadetblue;
 
 }
 
-li:hover {
+ol li:hover {
 
     background-color: aquamarine;
     list-style:none;
+    width: 200px;
 
 }
 .lista1{
