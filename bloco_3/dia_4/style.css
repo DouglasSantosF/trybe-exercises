@@ -1,0 +1,64 @@
+ ul li{
+  list-style: none;
+
+  
+}
+
+
+.listas{
+
+  display: inline;
+
+}
+.margem{
+
+  margin-left:600px;
+
+}
+
+
+h1 {
+  text-align: center;
+}
+
+.first {
+  background-color: rgb(235, 200, 84);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 200px;
+  margin-left: 570px;
+}
+
+.second {
+  background-color: rgb(219, 219, 219);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+  margin-left: 380px;
+}
+
+.third {
+  background-color: rgb(170, 142, 106);
+  font-size: 20px;
+  height: 50px;
+  text-align: center;
+  width: 300px;
+  display: inline-block;
+}
+
+.list-1 {
+
+margin-left:400px;
+display:inline;
+
+
+}
+
+.list-2{
+
+  display:inline;
+
+}
