@@ -1,5 +1,6 @@
 body{
-background-color: darkcyan;
+background-color:#033F7D;
+color:#2AA2BD;
 margin-left: 10%;
 margin-right: 10%;
 
@@ -28,13 +29,79 @@ ul{
   color:darkblue;
 }
 
+.menu li:hover{
+
+  color:chocolate;
+
+}
+
+.menu li:active{
+
+  background-color: darkslategrey;
+
+}
+
 .fato{
 
   margin-left: 420px;
 }
 
-.text-1{
+.article{
 
-  margin-left: 20px;
-
+  display: inline;
+  width: 200px;
 }
+
+
+  footer{
+
+    margin-left:300px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+   
+   
+  }
+
+  .footer{
+
+    width:920px;
+  }
+
+  .sec-art{
+
+    display: inline-block;
+    width: 920px;
+
+  }
+.sec-lat{
+  background-color: bisque;
+float:right;
+font-size: 25px;;
+border:1px solid white;
+height: 100px;
+width: 170px;
+padding:20px;
+display: inline-block;
+  }
+
+  .list-bibliografia li{
+
+    color: white;
+    width: 120px;
+
+  }
+
+  .list-bibliografia li:hover{
+
+    color: orange;
+    background-color: orange;
+    
+  }
+
+  #link-lat{
+
+    
+    border-radius: 5px;
+    font-size: 30px;
+   
+  }
