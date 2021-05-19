@@ -1,0 +1,140 @@
+body{
+background-color:#033F7D;
+color:#2AA2BD;
+margin-left: 10%;
+margin-right: 10%;
+
+}
+section{
+
+  border: 1px solid white;
+}
+
+ul{
+
+  list-style: none;
+}
+
+.cabecalho{
+  margin-left: 320px;
+
+}
+
+.menu li{
+
+  background-color: bisque;
+  display: inline;
+  margin-left: 200px;
+  border-radius: 5px;
+  font-size: 20px;
+  color:darkblue;
+}
+
+.menu li:hover{
+
+  color:chocolate;
+
+}
+
+.menu li:active{
+
+  background-color: darkslategrey;
+
+}
+
+.fato{
+
+  margin-left: 340px;
+}
+
+.article{
+
+  display: inline;
+  width: 200px;
+  
+}
+
+
+  footer{
+
+    margin-left:300px;
+    font-family:monospace;
+    
+   
+   
+  }
+
+  .footer{
+
+    width:920px;
+  }
+
+  .sec-art{
+
+    display: inline-block;
+    width: 920px;
+
+  }
+.sec-lat{
+  background-color: bisque;
+float:right;
+font-size: 25px;;
+border:1px solid white;
+height: 100px;
+width: 170px;
+padding:20px;
+display: inline-block;
+  }
+
+  .list-bibliografia{
+
+    color: white;
+    width: 120px;
+    margin-left: 10px;
+
+  }
+
+  .list-bibliografia li:hover{
+
+    color: orange;
+    background-color: orange;
+      
+  }
+
+  .title-bibliografia{
+
+    margin-left: 10px;
+    margin-top: 10px;
+
+  }
+
+  #link-lat{
+
+    
+    border-radius: 5px;
+    font-size: 30px;
+   
+  }
+
+  .text-1{
+
+
+    
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+  }
+
+  .olhos{
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+  }
+
+  .soco{
+
+    padding-left: 10px;
+    padding-top: 10px;
+  }
