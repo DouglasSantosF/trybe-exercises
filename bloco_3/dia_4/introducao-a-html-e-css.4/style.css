@@ -16,7 +16,8 @@ ul{
 }
 
 .cabecalho{
-  margin-left: 370px;
+  margin-left: 320px;
+
 }
 
 .menu li{
@@ -43,20 +44,21 @@ ul{
 
 .fato{
 
-  margin-left: 420px;
+  margin-left: 340px;
 }
 
 .article{
 
   display: inline;
   width: 200px;
+  
 }
 
 
   footer{
 
     margin-left:300px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family:monospace;
     
    
    
@@ -84,10 +86,11 @@ padding:20px;
 display: inline-block;
   }
 
-  .list-bibliografia li{
+  .list-bibliografia{
 
     color: white;
     width: 120px;
+    margin-left: 10px;
 
   }
 
@@ -95,7 +98,14 @@ display: inline-block;
 
     color: orange;
     background-color: orange;
-    
+      
+  }
+
+  .title-bibliografia{
+
+    margin-left: 10px;
+    margin-top: 10px;
+
   }
 
   #link-lat{
@@ -104,4 +114,27 @@ display: inline-block;
     border-radius: 5px;
     font-size: 30px;
    
+  }
+
+  .text-1{
+
+
+    
+    padding-left: 10px;
+    padding-top: 10px;
+
+
+  }
+
+  .olhos{
+
+    padding-left: 10px;
+    padding-top: 10px;
+
+  }
+
+  .soco{
+
+    padding-left: 10px;
+    padding-top: 10px;
   }
