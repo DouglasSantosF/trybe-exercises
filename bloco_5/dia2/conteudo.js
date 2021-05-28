@@ -29,6 +29,7 @@ let primFilhoDoFilho = document.createElement("div");
 
 
 console.log(document.querySelector("#primFilhoDoFilho").parentElement.parentElement.nextElementSibling);
+//removeChild();
 
 
 
