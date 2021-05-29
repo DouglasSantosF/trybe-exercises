@@ -29,7 +29,25 @@ let primFilhoDoFilho = document.createElement("div");
 
 
 console.log(document.querySelector("#primFilhoDoFilho").parentElement.parentElement.nextElementSibling);
-//removeChild();
+//removeChild(); exceto pai , elementoOndeVoceEsta e primeiroFilhoDoFilho
+
+
+function deletaFilho(pai , filho){
+
+  let a = document.querySelector(pai);
+  let b = document.querySelector(filho);
+
+  a.removeChild(b);
+}
+
+deletaFilho("#pai","#primeiroFilho");
+deletaFilho("#elementoOndeVoceEsta","#segundoEUltimoFilhoDoFilho");
+deletaFilho("#elementoOndeVoceEsta","#filhoVoceEsta");
+deletaFilho("#pai","#terceiroFilho");
+deletaFilho("#pai","#quartoEUltimoFilho");
+deletaFilho("#pai","#quintoFilho");
+
+console.log(document.querySelector("#paiDoPai"));
 
 
 
