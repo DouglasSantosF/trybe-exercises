@@ -47,15 +47,27 @@ for(let index=0; index<numbers.length; index+=1){
 }
 
 let h3_0 = document.createElement("h3");
-    //h3_0.className = "primeiro";
-    a.appendChild(h3_0);
+  a.appendChild(h3_0);
 
 let h3_1 = document.createElement("h3");
-   // h3_1.className = "segundo";
-    a.appendChild(h3_1);
+  a.appendChild(h3_1);
 
 let h3_2 = document.createElement("h3");
-    //h3_2.className = "terceiro";
-    a.appendChild(h3_2);    
+  a.appendChild(h3_2);    
+
+document.querySelector("h1").className = "title";
+
+h3_0.className = "description";
+h3_1.className = "sdescription";
+h3_2.className = "description";
+
+a.removeChild(e);
+
+f.style.margin = "auto";
+
+list.removeChild(list.children[8]);
+list.removeChild(list.children[8]);
+
+
 
 console.log(document.body);
