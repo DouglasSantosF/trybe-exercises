@@ -28,4 +28,24 @@ g.src ="https://picsum.photos/200";
 g.className = "small-image";
 
 
+let numbers = ["Um","Dois","Três","Quatro","Cinco","Seis","Sete","Oito","Nove","Dez"];
+
+let list = document.createElement("ul");
+f.appendChild(list);
+list.className = "list-numbers";
+
+for(let index=0; index<numbers.length; index+=1){
+
+  let text = numbers[index];
+
+  let itemList = document.createElement("li");
+      itemList.innerText = text;
+      itemList.className = text;
+  
+  document.querySelector(".list-numbers").appendChild(itemList);
+      
+}
+
+
+
 console.log(document.body);
