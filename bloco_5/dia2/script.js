@@ -46,6 +46,16 @@ for(let index=0; index<numbers.length; index+=1){
       
 }
 
+let h3_0 = document.createElement("h3");
+    //h3_0.className = "primeiro";
+    a.appendChild(h3_0);
 
+let h3_1 = document.createElement("h3");
+   // h3_1.className = "segundo";
+    a.appendChild(h3_1);
+
+let h3_2 = document.createElement("h3");
+    //h3_2.className = "terceiro";
+    a.appendChild(h3_2);    
 
 console.log(document.body);
