@@ -65,6 +65,8 @@ a.removeChild(e);
 
 f.style.margin = "auto";
 
+c.style.backgroundColor = "green";
+
 list.removeChild(list.children[8]);
 list.removeChild(list.children[8]);
 
