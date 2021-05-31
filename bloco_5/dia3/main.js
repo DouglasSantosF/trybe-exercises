@@ -2,7 +2,7 @@ const divUm = document.getElementById('divUm');
 const divDois = document.getElementById('divDois');
 const divTres = document.getElementById('divTres');
 const input = document.getElementById('input');
-const myWebpage = document.getElementById('mySpotrybefy');
+const myWebpage = document.getElementById("mySpotrybefy");
 
 /*
  Copie esse arquivo e edite apenas ele;
@@ -18,6 +18,43 @@ a cor do mesmo;
 
 Segue abaixo um exemplo do uso de event.target:
 */
+
+function addClassTech(elemento){
+
+  if(document.querySelectorAll(".tech").length !== 0){
+
+    console.log("Error! Já existe outro elemento com a classe tech.");
+  } 
+  else{
+
+    elemento.className ="tech";
+  }
+
+}
+
+//aprendi no http://www.devmedia.com.br
+function outraPage(){
+  window.location.href = "https://douglassantosf.github.io/";
+}
+
+myWebpage.addEventListener("dblclick",outraPage);
+
+function mudaCor(){
+
+  myWebpage.style.color = "green";
+  console.log(myWebpage.type);
+
+}
+
+function mudaCor2(){
+
+  myWebpage.style.color = "white";
+
+}
+
+myWebpage.addEventListener( "mouseover",mudaCor);
+myWebpage.addEventListener( "mouseleave",mudaCor2);
+
 
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
