@@ -19,18 +19,26 @@ a cor do mesmo;
 Segue abaixo um exemplo do uso de event.target:
 */
 
-function addClassTech(elemento){
+function mudaClass(event){
 
-  if(document.querySelectorAll(".tech").length !== 0){
-
-    console.log("Error! Já existe outro elemento com a classe tech.");
-  } 
-  else{
-
-    elemento.className ="tech";
-  }
-
+  let elementoComAClasse = document.querySelector(".tech");
+  elementoComAClasse.classList.remove("tech");
+  event.target.classList.add("tech");
+  input.value="";
 }
+
+divUm.addEventListener("click", mudaClass);
+divDois.addEventListener("click", mudaClass);
+divTres.addEventListener("click", mudaClass);
+
+function mudaTexto(event){
+
+  let elementoTech = document.querySelector(".tech");
+      elementoTech.innerText = event.target.value;
+}
+input.addEventListener("input", mudaTexto);
+
+
 
 //aprendi no http://www.devmedia.com.br
 function outraPage(){
