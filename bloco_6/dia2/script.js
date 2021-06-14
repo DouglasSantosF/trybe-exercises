@@ -10,3 +10,5 @@ for( index =0; index < estados.length; index +=1){
    estado.appendChild(listaEstado);
   
 }
+
+document.querySelector("#data-input").DatePickerX.init();
