@@ -1,1 +1,1 @@
-Este Repositório será responsável por guardar meus projetos da Trybe.
+Este Repositório será responsável por guardar meus exercícios da Trybe.
