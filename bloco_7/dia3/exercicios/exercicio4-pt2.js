@@ -1,16 +1,13 @@
 const assert = require('assert');
 
-const findTheNeedle = ( array, palavra) => {
-
-  for(index =0; index < array.length; index+=1){
-    if(array[index] === palavra){
-      return index;
+const findTheNeedle = (array, word) => {
+  let output = -1;
+  for (const index in array) {
+    if (word === array[index]) {
+      output = Number(index);
     }
-    else{
-      return -1;
-    }
-  }  
-
+  }
+  return output;
 };
 
 
