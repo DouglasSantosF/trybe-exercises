@@ -1,5 +1,4 @@
-const { it, expect } = require('@jest/globals');
-const sum = require('./exercicio-parte1.js');
+const sum = require('./exercicio1-parte1.js');
 
 
 describe('os testes do exercicio 1 do bloco 7.3',() => {

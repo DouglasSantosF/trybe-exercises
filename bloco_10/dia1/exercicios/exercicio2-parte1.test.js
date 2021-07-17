@@ -1,8 +1,8 @@
 const { it, expect } = require('@jest/globals');
 const { exec } = require('child_process');
-const myRemove = require('./exercicio-parte2');
+const myRemove = require('./exercicio2-parte1');
 
-describe('o do exers testescicio 1 do bloco 7.3', () => { 
+describe('os testes do exercicio 2 do bloco 7.3', () => { 
   it('Verifique se a chamada myRemove([1, 2, 3, 4], 3) retorna o array esperado', () => {
     expect(myRemove([1, 2, 3, 4], 3)).toEqual([1,2,4]);
   });  
