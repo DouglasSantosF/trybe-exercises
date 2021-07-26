@@ -7,8 +7,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1> Pokedex </h1>
-      <Pokedex pokemons={pokemons}/>
+      <h1> Pokedex </h1>  
+      {/* eu criei essa props batata apenas pra entenderem como funciona */}
+      <Pokedex batata={pokemons}/>
     </div>
   );
 }
