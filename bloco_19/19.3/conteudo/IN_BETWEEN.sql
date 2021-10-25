@@ -1,10 +1,13 @@
 /* Mostre o nome, sobrenome e e-mail dos clientes com os seguintes sobrenomes:
  hicks, crawford, henry, boyd, mason, morales e kennedy , ordenados por nome em ordem alfabética. */
   SELECT first_name, last_name, email FROM sakila.customer
-  WHERE last_name IN ('hicks', 'crawford', 'henry', 'boyd', 'mason', 'morales', 'kennedy');
+  WHERE last_name IN ('hicks', 'crawford', 'henry', 'boyd', 'mason', 'morales', 'kennedy')
+  ORDER BY last_name;
 
 /* Mostre o e-mail dos clientes com os address_id 172, 173, 174, 175 e 176 , ordenados em ordem alfabética. */
-
+    SELECT email FROM sakila.customer
+    WHERE address_id IN (172, 173, 174, 175 , 176)
+    ORDER BY email;
 
 /* Descubra quantos pagamentos foram feitos entre 01/05/2005 e 01/08/2005 .
  Lembre-se de que, no banco de dados, as datas estão armazenadas no formato ano/mês/dia ,
