@@ -33,7 +33,9 @@ As informações podem ser encontradas na tabela customer */
   /* 318 */
 
 /* Mostre todos os detalhes dos clientes que não estão ativos na loja 1 . As informações podem ser encontradas na tabela customer */
-
+   SELECT COUNT(*) FROM sakila.customer
+    WHERE active = false
+    AND store_id = 1;
 
 /* Precisamos descobrir quais são os 50 filmes feitos apenas para adultos com a menor taxa de aluguel,
 para que possamos fazer uma divulgação melhor desses filmes. Em caso de empate, ordene em ordem alfabética pelo título.
