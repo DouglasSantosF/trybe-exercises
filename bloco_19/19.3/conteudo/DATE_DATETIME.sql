@@ -10,6 +10,7 @@
 
 /* Usando a tabela rental , extraia data, ano, mês, dia, hora, minuto e segundo dos registros com rental_id = 10330.
  Utilize a coluna rental_date para extrair as informações. */
-
+  SELECT rental_date FROM sakila.rental
+  WHERE rental_id = 10330;
 
 /* Monte uma query que retorne todos os dados do pagamento feito no dia 28/07/2005 a partir das 22 horas . */
