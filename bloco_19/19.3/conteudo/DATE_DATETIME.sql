@@ -1,8 +1,11 @@
 /* Quantos pagamentos temos com a data de retorno 2005-05-25 ? Há múltiplas maneiras possíveis de encontrar a resposta. */
   SELECT COUNT(*) FROM sakila.payment
   WHERE DATE(payment_date) = '2005-05-25';
+  /* 137 */
 
 /* Quantos pagamentos foram feitos entre 01/07/2005 e 22/08/2005 ? */
+  SELECT count(*) FROM sakila.payment
+  WHERE payment_date  BETWEEN '2005-07-01 00:00:00' AND '2005-08-22 23:59:59';
 
 
 /* Usando a tabela rental , extraia data, ano, mês, dia, hora, minuto e segundo dos registros com rental_id = 10330.
