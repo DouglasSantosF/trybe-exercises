@@ -14,3 +14,5 @@
   WHERE rental_id = 10330;
 
 /* Monte uma query que retorne todos os dados do pagamento feito no dia 28/07/2005 a partir das 22 horas . */
+  SELECT * FROM sakila.payment
+  WHERE payment_date LIKE '2005-07-28 22%';
