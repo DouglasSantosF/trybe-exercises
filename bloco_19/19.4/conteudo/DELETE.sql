@@ -6,8 +6,11 @@ DELETE FROM sakila.actor
 WHERE first_name = "KARL";
 
 /* Exclua do banco de dados os atores com o nome de "MATTHEW". */
+  DELETE FROM sakila.film_actor 
+  WHERE actor_id IN (8,103,181);
 
-
+  DELETE FROM sakila.actor
+  WHERE actor_id IN (8,103,181);
 /* Exclua da tabela film_text todos os registros que possuem a palavra "saga" em suas descrições. */
 
 
