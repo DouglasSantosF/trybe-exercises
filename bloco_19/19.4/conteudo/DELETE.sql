@@ -12,7 +12,8 @@ WHERE first_name = "KARL";
   DELETE FROM sakila.actor
   WHERE actor_id IN (8,103,181);
 /* Exclua da tabela film_text todos os registros que possuem a palavra "saga" em suas descrições. */
-
+  DELETE FROM sakila.film_text
+  WHERE description LIKE "%saga%";
 
 /* Inspecione todas as tabelas do banco de dados sakila e analise quais restrições
  ON DELETE foram impostas em cada uma. Use o Table Inspector para fazer isso (aba DDL). */
