@@ -4,7 +4,9 @@
   WHERE first_name = "JULIA";
 
 /* Foi exigido que a categoria "Sci-Fi" seja alterada para "Science Fiction". */
-
+  UPDATE sakila.category
+  SET name = "Science Fiction"
+  WHERE name = "Sci-Fi";
 
 /* Atualize o valor do aluguel para $25 de todos os filmes com duração maior que 100 minutos
  e que possuem a classificações "G" , "PG" ou "PG-13" e um custo de substituição maior que $20. */
