@@ -11,3 +11,9 @@
 
   SELECT 220 DIV 12;
   -- 18
+
+/* Utilizando o resultado anterior, responda à seguinte pergunta:
+ temos lugares sobrando? Se sim, quantos? */
+
+  SELECT 200 MOD 12;
+  -- 4
