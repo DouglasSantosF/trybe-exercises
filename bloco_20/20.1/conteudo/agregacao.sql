@@ -14,6 +14,7 @@
   --185
 
 --A soma de todas as durações como 'Tempo de Exibição Total';
-
+  SELECT SUM(length) AS 'Tempo de Exibição Total'  FROM sakila.film;
+  --115272
 
 --E finalmente, a quantidade total de filmes cadastrados na tabela sakila.film como 'Filmes Registrados'.
