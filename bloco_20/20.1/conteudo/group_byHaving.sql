@@ -35,4 +35,19 @@ film . Os resultados devem ser agrupados pela classificação indicativa e orden
     SELECT rating, AVG(length) AS duração_média
     FROM sakila.film
     GROUP BY rating
-    HAVING duração_média BETWEEN 115.0 AND 121.50;
+    HAVING duração_média BETWEEN 115.0 AND 121.50
+    ORDER BY duração_média DESC;
+
+  /* Usando a query a seguir, exiba apenas os valores de custo de substituição que estão acima de $3950.50.
+   Dê um alias que faça sentido para SUM(replacement_cost) , de forma que deixe a query mais legível.
+   Finalize ordenando os resultados de forma crescente. */
+
+   -- SELECT rating, SUM(replacement_cost)
+   -- FROM sakila.film
+   -- GROUP by rating;
+
+    SELECT rating, SUM(replacement_cost) AS custo_total
+    FROM sakila.film
+    GROUP by rating
+    HAVING custo_total > 3950.50
+    ORDER BY custo_total; 
