@@ -48,10 +48,19 @@
   cust.first_name LIKE '%rene%';
 
 /* Exiba o nome e a quantidade de endereços dos clientes cadastrados.
- Ordene seus resultados por nomes de forma decrescente.
+  Ordene seus resultados por nomes de forma decrescente.
   Exiba somente os clientes ativos. As informações podem ser encontradas
-   na tabela address e customer . */
-
+  na tabela address e customer . */
+    SELECT 
+      c.first_name, COUNT(a.address) AS `quantidade de endereço`
+    FROM
+      sakila.customer c
+          INNER JOIN
+      sakila.address AS a ON a.address_id = c.address_id
+    WHERE
+        c.active = 1
+    GROUP BY c.first_name
+    ORDER BY first_name DESC;
 
 /* Monte uma query que exiba o nome , sobrenome e a média de valor ( amount )
  paga aos funcionários no ano de 2006. Use as tabelas payment e staff .
