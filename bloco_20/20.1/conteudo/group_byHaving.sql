@@ -23,3 +23,16 @@ film . Os resultados devem ser agrupados pela classificação indicativa e orden
   FROM sakila.address
   GROUP BY district
   ORDER BY Quant_Endereço DESC;
+
+  /* Usando a query a seguir, exiba apenas as durações médias que estão entre 115.0 a 121.50. Além disso, dê um alias (apelido)
+   à coluna gerada por AVG(length) ,
+   de forma que deixe a query mais legível. Finalize ordenando os resultados de forma decrescente. */
+
+   -- SELECT rating, AVG(length)
+   -- FROM sakila.film
+   -- GROUP BY rating;
+
+    SELECT rating, AVG(length) AS duração_média
+    FROM sakila.film
+    GROUP BY rating
+    HAVING duração_média BETWEEN 115.0 AND 121.50;
