@@ -18,7 +18,17 @@
 /* Exiba o id do cliente , nome e email dos primeiros 100 clientes,
  ordenados pelo nome em ordem decrescente, juntamente com o id do endereço
   e o endereço onde o cliente mora. Essas informações podem ser encontradas
-   nas tabelas customer e address . */
+  nas tabelas customer e address . */
+  customer_id AS 'ID do Cliente', 
+  CONCAT(cust.first_name, ' ', cust.last_name) AS Nome_completo,
+  cust.email,
+  cust.address_id AS 'ID do Endereço',
+  ad.address AS Endereço
+  FROM sakila.customer cust
+  INNER JOIN sakila.address ad 
+  ON cust.address_id = ad.address_id
+  ORDER BY Nome_completo DESC
+  LIMIT 100;
 
 
 /* Exiba o nome , email , id do endereço , endereço e distrito dos clientes
