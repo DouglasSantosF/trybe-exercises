@@ -17,4 +17,9 @@ film . Os resultados devem ser agrupados pela classificação indicativa e orden
   ORDER BY avg_rental_duration DESC;
 
 
-/* Monte uma query para a tabela sakila.address que exiba o nome do distrito e a quantidade de endereços registrados nele. Os resultados devem ser ordenados da maior quantidade para a menor. */
+/* Monte uma query para a tabela sakila.address que exiba o nome do distrito e a quantidade de endereços registrados nele.
+ Os resultados devem ser ordenados da maior quantidade para a menor. */
+  SELECT district, COUNT(*) AS Quant_Endereço
+  FROM sakila.address
+  GROUP BY district
+  ORDER BY Quant_Endereço DESC;
