@@ -7,8 +7,13 @@
 
 /* Use o JOIN para exibir o nome , sobrenome e endereço de cada um dos funcionários
  do banco. Use as tabelas staff e address . */
+  SELECT
+  CONCAT(st.first_name, ' ', st.last_name) AS Nome_completo,
+  ad.address AS Endereço
+  FROM sakila.staff st
+  INNER JOIN sakila.address ad 
+  ON st.address_id = ad.address_id;
 
-  
 
 /* Exiba o id do cliente , nome e email dos primeiros 100 clientes,
  ordenados pelo nome em ordem decrescente, juntamente com o id do endereço
