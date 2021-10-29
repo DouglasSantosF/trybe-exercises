@@ -65,8 +65,26 @@
 /* Monte uma query que exiba o nome , sobrenome e a média de valor ( amount )
  paga aos funcionários no ano de 2006. Use as tabelas payment e staff .
   Os resultados devem estar agrupados pelo nome e sobrenome do funcionário. */
-
+    SELECT
+	  st.first_name, 
+    st.last_name,
+    AVG(py.amount) AS 'Média de Valor'
+    FROM sakila.staff AS st
+    INNER JOIN sakila.payment AS py
+    ON st.staff_id = py.staff_id
+    WHERE YEAR(py.payment_date) = 2006
+    GROUP BY st.first_name, st.last_name;
 
 /* Monte uma query que exiba o id do ator , nome , id do filme e título do filme ,
  usando as tabelas actor , film_actor e film .
   Dica: você precisará fazer mais de um JOIN na mesma query . */
+    SELECT 
+	  act.actor_id AS ' ID do Ator ',
+    CONCAT(act.first_name,' ', act.last_name) AS 'Nome Completo',
+    f.film_id AS ' ID do Filme ',
+    f.title AS ' Título '
+    FROM sakila.actor AS act
+    INNER JOIN sakila.film_actor AS f_act
+    ON act.actor_id = f_act.actor_id
+    INNER JOIN sakila.film AS f
+    ON f_act.film_id = f.film_id;
