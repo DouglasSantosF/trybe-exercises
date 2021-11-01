@@ -16,7 +16,11 @@ exiba o id e título dos livros estão atualmente emprestados e que contêm a pa
 
 
 /* Usando a tabela carsales e customers , exiba apenas o nome dos clientes que ainda não compraram um carro. */
-
+  SELECT `Name` FROM hotel.Customers AS c
+    WHERE NOT EXISTS(
+	SELECT * FROM hotel.CarSales
+    WHERE c.CustomerID = CustomerID
+);
 
 
 /* Usando o comando EXISTS em conjunto com JOIN e as tabelas cars ,
