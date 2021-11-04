@@ -17,6 +17,23 @@
 
 /* Crie uma function que, dado o parâmetro de entrada inventory_id ,
  retorna o nome do filme vinculado ao registro de inventário com esse id. */
+  USE sakila;
+
+  DELIMITER $$
+
+  CREATE FUNCTION returnFilmePeloInventoryID( ID INT )
+  RETURNS VARCHAR(100) READS SQL DATA
+  BEGIN
+  DECLARE nomeDoFilme VARCHAR(100);
+  SELECT t1.title 
+    FROM sakila.film as t1
+      INNER JOIN
+      sakila.inventory as t2
+      ON t1.film_id = t2.film_id
+      WHERE t2.inventory_id = ID INTO nomeDoFilme;
+      RETURN NomeDoFilme;
+  END $$
+  DELIMITER ;
 
 
 /* Crie uma function que receba uma determinada categoria de filme em formato de texto (ex: 'Action' , 'Horror' ) e
