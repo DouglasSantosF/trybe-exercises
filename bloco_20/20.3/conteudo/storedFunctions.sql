@@ -38,3 +38,19 @@
 
 /* Crie uma function que receba uma determinada categoria de filme em formato de texto (ex: 'Action' , 'Horror' ) e
  retorna a quantidade total de filmes registrados nessa categoria. */
+
+  USE sakila;
+  DELIMITER $$
+
+  CREATE FUNCTION retornaQntDeFilmesRegistrado( nomeCategoria VARCHAR(100))
+  RETURNS INT READS SQL DATA
+  BEGIN
+    DECLARE quantidadeDeFilme INT;
+      SELECT COUNT(*) FROM sakila.category as t1
+      INNER JOIN sakila.film_category as t2
+      ON t1.category_id = t2.category_id
+      WHERE t1.name = nomeCategoria INTO quantidadeDeFilme;
+      RETURN quantidadeDeFilme;
+  END $$
+
+  DELIMITER ;
