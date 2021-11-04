@@ -40,3 +40,21 @@ Use as tabelas film , film_category e category para montar essa procedure. */
 /* Monte uma procedure que receba o email de um cliente como parâmetro
  de entrada e diga se o cliente está ou não ativo,
  através de um parâmetro de saída. */
+  USE sakila;
+  DELIMITER $$
+
+  CREATE PROCEDURE verificaSeClienteEAtivo(IN emailCLiente VARCHAR(100), OUT isActive BOOL )
+  BEGIN
+    SET isActive = (
+          SELECT active
+          FROM sakila.customer
+          WHERE email = emailCLiente
+      );
+  END $$
+  DELIMITER ;
+
+  -- Como usar:
+
+SELECT @ActiveStatus;
+CALL CheckIfActiveClient('MARY.SMITH@sakilacustomer.org', @ActiveStatus);
+SELECT @ActiveStatus
