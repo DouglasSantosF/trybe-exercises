@@ -1,0 +1,13 @@
+1 - No Docker Hub , utilizando a caixa de busca ( "Search for great content" ) , busque pela imagem da Distribuição Linux Debian ;
+  https://hub.docker.com/search?q=&type=image
+
+  https://hub.docker.com/_/debian
+
+2 - Uma vez que encontrar a imagem oficial , acesse-a (clicando em seu card) e verifique na página de detalhes, se existe algum comando
+ para baixarmos a imagem localmente sem ter que criar um container para isso ;  
+  
+  https://hub.docker.com/_/debian?tab=tags
+
+3 - Baixe a imagem utilizando a tag : stable-slim , que é uma versão reduzida da distribuição;  
+
+  docker pull debian:stable-slim

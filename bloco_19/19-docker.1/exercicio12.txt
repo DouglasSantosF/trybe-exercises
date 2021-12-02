@@ -1,0 +1,12 @@
+12 - Remova somente o container criado para esse exercício .
+  
+  docker container rm <CONTAINER ID || NAMES> 
+
+13 - Crie e rode de modo interativo em modo 'Cleanup' , a imagem andrius/ascii-patrol ;
+
+  docker run -it --rm andrius/ascii-patrol
+
+14 - Encerre o container utilizando os botões [ ctrl ] + [ c ].  
+
+  Após fechar o jogo, utilize o comando clear para limpar a tela.
+  Você pode constatar que, rodando um docker container ls -a , o container do jogo não estará presente.

@@ -1,0 +1,22 @@
+7 - Verifique na sua lista de containers , qual o container é referente ao exercício que acabou de praticar;
+
+-- Para listar o container , podemos utilizar o comando abreviado docker ps -l (para mostrar qual foi o último container criado),
+ assim como docker container ls -l ou ainda, passando o parâmetro -a para mostrar todos.
+
+ docker container ls -a
+
+8 - Inicie o mesmo container novamente , sem criar outro. Valide se ele está ativo na lista de containers;
+
+  docker container start *id do container*
+
+9 - Retome o container que foi criado anteriormente nesse exercício .
+
+  Foi utilizado o comando abreviado docker attach <CONTAINER ID || NAMES> .
+  Já que o container foi inicializado anteriormente de modo interativo, pudemos retomar seu terminal.
+
+10 - Rode o comando cat /etc/debian_version que deve retornar a versão atual do sistema do container ;
+  
+  cat /etc/debian_version
+
+11 - Encerre o terminal;  
+  exit
